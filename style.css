@@ -280,6 +280,27 @@ hr {
     background: #e0e0e0;
 }
 
+/* Footer */
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    padding: 0 0 54px 0;
+}
+
+.footer__social_icon {
+    display: flex;
+    gap: 35px;
+}
+
+.footer__p {
+    text-align: center;
+    font-size: 14px;
+}
+
 /* Adaptive */
 
 @media (max-width: 920px) {
