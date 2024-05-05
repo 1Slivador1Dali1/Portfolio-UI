@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Heebo";
+    src: url(./fonts/Heebo-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Heebo";
+    src: url(./fonts/Heebo-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Heebo";
+    src: url(./fonts/Heebo-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Heebo";
+    src: url(./fonts/Heebo-Black.woff2) format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url(./fonts/CircularStd-Book.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url(./fonts/CircularStd-Book.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+	--primary: #ff6464;
+	--secondry: #00a8cc;
+	--dark: #21243d;
+	--light: #8695a4;
+
+    --font-family: "Heebo", sans-serif;
+    --second-family: "Circular Std", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+}
