@@ -61,6 +61,140 @@
     margin: 0;
 }
 
-body {
+.wrapper {
     margin: 0 auto;
+    max-width: 1152px;
+}
+
+.header__wrapper {
+    max-width: 1152px;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 33px;
+    padding: 27px 60px;
+}
+
+.menu_item {
+    list-style-type: none;
+}
+
+.menu_item a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: right;
+    color: #000;
+    text-decoration: none;
+}
+
+.header__button_menu_burger {
+    display: none;
+}
+
+.paragraph {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark);
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 0px 148px 88px;
+}
+
+.header__bottom_left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header__left_h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 136%;
+    color: var(--dark);
+}
+
+.header__left_button {
+    border: none;
+    border-radius: 2px;
+    width: 208px;
+    height: 47px;
+    background: var(--primary);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+@media (max-width: 920px) {
+    .header__bottom {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 34px;
+        padding: 0px 24px 58px;
+        
+    }
+
+    .header__left_h1 {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        text-align: center;
+        color: var(--dark);
+    }
+
+    .header__left_button {
+        margin: 0 auto;
+    }
+
+    .header__left_p {
+        text-align: center;
+    }
+
+    .header__bottom_left {
+        gap: 24px;
+    }
+
+    .header__bottom_right img {
+        width: 174px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .header__wrapper {
+        gap: 33px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        padding: 20px 18px 12px 0px;
+    }
+
+    .header__button_menu_burger {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
 }
